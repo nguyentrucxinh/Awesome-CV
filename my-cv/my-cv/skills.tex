@@ -11,18 +11,21 @@
 
 %---------------------------------------------------------
   \cvskill
-    {Languages} % Category
+    {Languages:} % Category
     {Vietnamese (Native), English} % Skills
+
+%---------------------------------------------------------
+  \cvskill
+    {Tech skills:} % Category
+    {\newline} % Skills
 
 %---------------------------------------------------------
 
 \end{cvskills}
 
-\begin{multicols}{2}
-  [
-  \textbf{Technical skills}
-  ]
-  \begin{itemize}
+\begin{minipage}[t]{.5\linewidth}
+  {\descriptionstyle{
+    \begin{cvitems}
       \item JavaScript ES5 \& ES6 (1y5m)
       \item Node.js/Express.js
       \item MongoDB/Mongoose
@@ -35,6 +38,12 @@
       \item JIRA (~1y)
       \item Coding Convertions
       \item Web services: REST/SOAP (2y)
+    \end{cvitems}}
+  }
+\end{minipage}%
+\begin{minipage}[t]{.5\linewidth}
+  {\descriptionstyle{
+    \begin{cvitems}
       \item Authentication: JWT/OAuth2 (2y)
       \item PaaS: Google Cloud Platform, Heroku (~1y)
       \item Version control: Git (2y)
@@ -45,5 +54,7 @@
       \item Object-Oriented Programming
       \item Functional Programming
       \item Reactive Programming
-  \end{itemize}
-\end{multicols}
+      \item Photoshop (Basic)
+    \end{cvitems}}
+  }
+\end{minipage}%
